@@ -11,12 +11,14 @@ struct DetailView: View {
     let url:String?
     
     var body: some View {
-        Text("Hello, World!")
+        WebView(urlString: url)
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(url: "")
+        DetailView(url: "https://www.google.com")
     }
 }
+
+
